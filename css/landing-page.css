@@ -1,0 +1,455 @@
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/genomics.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.content-section-c {
+    padding: 50px 0;
+    background-color: 	#3579b5;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+/* Event Calendar Features */
+.event-container {
+    font-family: "Roboto", sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .event-container h3.year {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid #b1b1b1;
+  }
+  
+  .event-container .event {
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+  }
+  
+  .event .event-left {
+    background: #222;
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+  }
+
+  .event .event-left .date {
+    font-size: 56px;
+  }
+
+  .event .event-left .year {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+  
+  .event .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+
+  /* Event past */
+
+  .event-container .event-past {
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+    opacity: 0.65;
+  }
+
+  @media (max-width: 550px) {
+    .event {
+      flex-direction: column;
+    }
+  
+    .event .event-left {
+      padding: 0;
+      border-radius: 8px 8px 0 0;
+    }
+  
+    .event .event-left .event-date .date,
+    .event .event-left .event-date .month {
+      display: inline-block;
+      font-size: 24px;
+    }
+  
+    .event .event-left .event-date {
+      padding: 10px 0;
+    }
+  }
+
+  .event-wrapper{
+    border: 1px solid #ddd
+    display: flex;
+    overflow-y: auto;
+    max-height: 450px;
+}
+
+  /* Member Features */
+
+.content-wrapper{
+text-align: center;
+margin: auto;
+}
+
+.member-items-wrapper{
+    display: grid;
+    /* width: 20%; */
+    /* margin: auto; */
+    /* padding-top: 20px; */
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    /* padding-bottom: 50px; */
+    position: center;
+}
+
+.member-item{
+    padding-top: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.member-img-wrapper{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbnail{
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+    /* box-shadow: 1px 1px #b8bbbf; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    object-fit: cover;
+    border-radius: 50%;
+    display: inline-block; 
+}
+
+.member-name{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.member-position{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+.profile{
+    margin-top: 25px;
+}
+
+.profile .img-box{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+
+.profile h7{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.profile h8{
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.img-box:after{
+    content:'';
+    opacity: 0;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.img-responsive{
+    border-radius: 50%;
+}
+
+.img-box ul{
+    margin: 0;
+    padding: 20px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.img-box ul li{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 3px;
+    padding: 7px;
+    display: inline-block;
+}
+
+.img-box a{
+    color: #fff;
+}
+
+.img-box:hover:after{
+    opacity: 1;
+}
+
+.img-box:hover ul{
+    opacity: 1;
+}
+
+.img-box a:hover li{
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.img-box:after, .img-box ul, .img-box ul li{
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.line-header ul li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+/* 
+.table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
+.table .left-column{
+    border-right: 1px solid grey;
+    border-top: none;
+    width: 100%;
+
+}
+
+.table .right-column{
+    border-top: none;
+    text-align: left;
+    padding-left: 50px;
+    width: 10%;
+} */
+
+p{
+    font-size: 120%;
+}
+
