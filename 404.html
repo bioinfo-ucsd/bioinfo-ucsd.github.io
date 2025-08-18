@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page Not Found – Redirecting</title>
+  <meta http-equiv="refresh" content="3; url=https://gbic-at-ucsd.web.app">
+  <script>
+    if (
+      location.hostname === 'bioinfo-ucsd.github.io' ||
+      location.hostname.endsWith('.github.io')
+    ) {
+      location.replace('https://gbic-at-ucsd.web.app' + location.pathname + location.search + location.hash);
+    }
+  </script>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .redirect-message {
+      margin-top: 1rem;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>404 – Page Not Found</h1>
+  <div class="redirect-message">
+    You will be redirected to the new site automatically.<br>
+    If not, <a href="https://gbic-at-ucsd.web.app">click here</a>.
+  </div>
+</body>
+</html>
