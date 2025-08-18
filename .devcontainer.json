@@ -1,0 +1,28 @@
+{
+  "name": "GBIC Firebase",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+
+  // Features let you install extra tooling (optional, here just Node.js image already includes npm)
+  "features": {},
+
+  // Run some commands after container is created
+  "postCreateCommand": "npm install -g firebase-tools",
+
+  // Forward ports so `firebase serve` or `firebase emulators:start` works
+  "forwardPorts": [5000, 8080, 9005],
+
+  // VS Code-specific settings
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      "extensions": [
+        "ms-vscode.vscode-typescript-next",
+        "esbenp.prettier-vscode",
+        "firebase.firebase-vscode",
+        "GitHub.vscode-github-actions"
+      ]
+    }
+  }
+}
