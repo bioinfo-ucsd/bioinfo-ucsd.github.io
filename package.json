@@ -1,0 +1,11 @@
+{
+  "name": "bioinfo-ucsd.github.io",
+  "version": "1.0.0",
+  "description": "Jekyll theme based on [landing-page bootstrap theme ](http://startbootstrap.com/templates/landing-page/)",
+  "keywords": [],
+  "author": "GBIC @ UC San Diego",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^12.1.0"
+  }
+}
