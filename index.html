@@ -7,7 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="GBIC Website"
-">
+
+    <script>
+        // automatically redirect from GitHub pages to Firebase
+        if (
+            location.hostname === 'bioinfo-ucsd.github.io' ||
+            location.hostname.endsWith('.github.io')
+        ) {
+            location.replace('https://gbic-at-ucsd.web.app' + location.pathname + location.search + location.hash);
+        }
+    </script>
+
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/12.1.0/firebase-app-compat.js"></script>
     <!-- include only the Firebase features as you need -->
