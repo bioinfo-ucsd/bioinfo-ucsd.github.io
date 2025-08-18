@@ -681,15 +681,21 @@
 <!-- Custom Theme JavaScript -->
 <script src="js/landing-page.js"></script>
 
-    <script>
-        // automatically redirect from GitHub pages to Firebase
-        if (
-            location.hostname === 'bioinfo-ucsd.github.io' ||
-            location.hostname.endsWith('.github.io')
-        ) {
-            location.replace('https://gbic-at-ucsd.web.app' + location.pathname + location.search + location.hash);
-        }
-    </script>
+<script>
+    // automatically redirect from GitHub pages to Firebase
+    if (
+        location.hostname === 'bioinfo-ucsd.github.io' ||
+        location.hostname.endsWith('.github.io')
+    ) {
+        location.replace('https://gbic-at-ucsd.web.app' + location.pathname + location.search + location.hash);
+    }
+</script>
+<noscript>
+    <div style="padding:1em; margin:1em 0; background:#ffeeee; color:#660000; border:1px solid #cc0000;">
+    This site has moved to <a href="https://gbic-at-ucsd.web.app">https://gbic-at-ucsd.web.app</a>.<br>
+    Please update your bookmarks.
+    </div>
+</noscript>
 
 	</body>
 </html>
