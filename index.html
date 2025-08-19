@@ -6,11 +6,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="UCSD GBIC Website"
-">
-    <meta name="author" content="Jennifer">
+    <meta name="description" content="GBIC Website">
 
-    <title>UCSD-GBIC</title>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/12.1.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/12.1.0/firebase-auth-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <title>GBIC @ UC San Diego</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +28,7 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -672,6 +680,22 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="js/landing-page.js"></script>
+
+<script>
+    // automatically redirect from GitHub pages to Firebase
+    if (
+        location.hostname === 'bioinfo-ucsd.github.io' ||
+        location.hostname.endsWith('.github.io')
+    ) {
+        location.replace('https://gbic-at-ucsd.web.app' + location.pathname + location.search + location.hash);
+    }
+</script>
+<noscript>
+    <div style="padding:1em; margin:1em 0; background:#ffeeee; color:#660000; border:1px solid #cc0000;">
+    This site has moved to <a href="https://gbic-at-ucsd.web.app">https://gbic-at-ucsd.web.app</a>.<br>
+    Please update your bookmarks.
+    </div>
+</noscript>
 
 	</body>
 </html>
